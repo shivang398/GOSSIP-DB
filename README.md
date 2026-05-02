@@ -3,7 +3,6 @@
 > A production-hardened, causally-consistent distributed key-value store — powered by a custom Gossip protocol over gRPC, with real-time SSE streaming, Prometheus observability, and a React dashboard.
 
 [![Go](https://img.shields.io/badge/Go-1.25+-00ADD8?style=flat&logo=go)](https://golang.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-15%2F15%20passing-brightgreen)](#testing)
 
 ---
