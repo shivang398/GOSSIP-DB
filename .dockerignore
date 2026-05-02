@@ -1,0 +1,11 @@
+data/
+bin/
+.git/
+*.log
+*.txt
+tmp/
+scripts/*.log
+test-data/
+docker-data/
+node_modules/
+dist/

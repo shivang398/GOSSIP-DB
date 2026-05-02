@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package gossip;
+
+option go_package = "github.com/shivang/gossipdb/api/proto/gossip";
+
+service GossipService {
+  rpc Sync(SyncRequest) returns (SyncResponse);
+}
+
+message Metadata {
+  int64 timestamp = 1;
+  bool deleted = 2;
+}
+
+message SyncRequest {
+  string node_id = 1;
+  map<string, Metadata> keys = 2;
+}
+
+message SyncResponse {
+  // If the requester is missing keys or has older versions, the responder sends the full values back
+  map<string, Value> updates = 1;
+}
+
+message Value {
+  bytes data = 1;
+  int64 timestamp = 2;
+  bool deleted = 3;
+}
