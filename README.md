@@ -325,6 +325,4 @@ These features elevate GossipDB to a production-grade, interview-crushing distri
 
 ---
 
-## License
 
-MIT License
